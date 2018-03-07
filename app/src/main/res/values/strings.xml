@@ -1,0 +1,130 @@
+<resources>
+    <string name="app_name">Demo3</string>
+
+    <!--底部导航栏-->
+    <string name="tab_menu_news">消息速递</string>
+    <string name="tab_menu_course">课程介绍</string>
+    <string name="tab_menu_questions">经验交流</string>
+    <string name="tab_menu_subject">课余活动</string>
+
+    <!--底部按钮-->
+    <string name="tab_menu_thumb">点赞</string>
+    <string name="tab_menu_fav">收藏</string>
+    <string name="tab_menu_share">分享</string>
+
+    <string name="temp">将来搜索栏</string>
+    <string name="temp2">不同种类如消息速递</string>
+    <string name="test">
+        // Response sample 1（lecture/activity）
+{
+    "type": "lecture", // 对于activity，下面的格式没有区别
+    "pv": 100, // page view
+    "forum_id": -1, // 表示这个页面没有挂载讨论区
+    "info": {
+        "title": "神经语言学方法与中国传统文化研究",
+        "speaker": "杨亦鸣（江苏师范大学长江学者特聘教授）", // or 活动主办方
+        "datetime": "2018-02-01 14:10:00",
+        "location": "珞珈山庄二会议室",
+        "img_s": "/assets/img/1.jpg", // 小图
+        "img_m": "/assets/img/2.jpg", // 大图
+    },
+    "content": "这里是内容（如果需要富样式，可以考虑做个webview html读取）"
+}
+
+// Response sample 2（course）
+{
+    "type": "course",
+    "pv": 100,
+    "forum_id": -1,
+    "info": {
+        "title": "中国哲学原著选读",
+        "major": "哲学学院", // 表示授课学院
+        "speaker": "廖璨璨",
+    },
+    "content": "这里是内容（如果需要富样式，可以考虑做个webview html读取）"
+}
+
+// Response sample 3（questions）
+{
+    "type": "questions",
+    "pv": 100,
+    "forum_id": 5, // 使用id为5的讨论区
+    "info": {
+        "title": "备考哲学研究生的注意事项？",
+        "weight": 1000, // 管理员设置权重，权重高的优先显示
+    },
+    "content": "本人是15级哲学基地班的在读本科生，于今年底想考武大的哲学研究生，准备开始备考，请问有什么经验方法想了解借鉴一下～"
+}
+
+// Response sample 4（subject）
+{
+    "type": "subject",
+    "pv": 100,
+    "forum_id": -1,
+    "info": {
+        "title": "哲学学院师生书画作品撷英",
+        "img_s": "/assets/img/1.jpg",
+        "img_m": "/assets/img/2.jpg",
+        "date": "11月下旬",
+    },
+    "content": "这里是内容（如果需要富样式，可以考虑做个webview html读取）"
+}
+
+```// Response sample 1（lecture/activity）
+{
+    "type": "lecture", // 对于activity，下面的格式没有区别
+    "pv": 100, // page view
+    "forum_id": -1, // 表示这个页面没有挂载讨论区
+    "info": {
+        "title": "神经语言学方法与中国传统文化研究",
+        "speaker": "杨亦鸣（江苏师范大学长江学者特聘教授）", // or 活动主办方
+        "datetime": "2018-02-01 14:10:00",
+        "location": "珞珈山庄二会议室",
+        "img_s": "/assets/img/1.jpg", // 小图
+        "img_m": "/assets/img/2.jpg", // 大图
+    },
+    "content": "这里是内容（如果需要富样式，可以考虑做个webview html读取）"
+}
+
+// Response sample 2（course）
+{
+    "type": "course",
+    "pv": 100,
+    "forum_id": -1,
+    "info": {
+        "title": "中国哲学原著选读",
+        "major": "哲学学院", // 表示授课学院
+        "speaker": "廖璨璨",
+    },
+    "content": "这里是内容（如果需要富样式，可以考虑做个webview html读取）"
+}
+
+// Response sample 3（questions）
+{
+    "type": "questions",
+    "pv": 100,
+    "forum_id": 5, // 使用id为5的讨论区
+    "info": {
+        "title": "备考哲学研究生的注意事项？",
+        "weight": 1000, // 管理员设置权重，权重高的优先显示
+    },
+    "content": "本人是15级哲学基地班的在读本科生，于今年底想考武大的哲学研究生，准备开始备考，请问有什么经验方法想了解借鉴一下～"
+}
+
+// Response sample 4（subject）
+{
+    "type": "subject",
+    "pv": 100,
+    "forum_id": -1,
+    "info": {
+        "title": "哲学学院师生书画作品撷英",
+        "img_s": "/assets/img/1.jpg",
+        "img_m": "/assets/img/2.jpg",
+        "date": "11月下旬",
+    },
+    "content": "这里是内容（如果需要富样式，可以考虑做个webview html读取）"
+}
+
+```
+    </string>
+</resources>

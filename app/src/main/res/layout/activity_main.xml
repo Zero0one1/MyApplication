@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.demo3.MainActivity">
+
+    <!--底部导航栏-->
+    <RadioGroup
+        android:id="@+id/rg_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_white">
+        <RadioButton
+            android:id="@+id/rb_news"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_news"
+            android:text="@string/tab_menu_news" />
+
+        <RadioButton
+            android:id="@+id/rb_courses"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_courses"
+            android:text="@string/tab_menu_course" />
+
+        <RadioButton
+            android:id="@+id/rb_questions"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_questions"
+            android:text="@string/tab_menu_questions" />
+
+        <RadioButton
+            android:id="@+id/rb_subjects"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_subjects"
+            android:text="@string/tab_menu_subject" />
+    </RadioGroup>
+
+    <!--底部导航栏上面的横线-->
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/rg_tab_bar"
+        android:background="@color/div_white" />
+
+    <!--中间&首部的viewpager-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/div_tab_bar"
+        android:layout_alignParentTop="true"/>
+
+</RelativeLayout>
